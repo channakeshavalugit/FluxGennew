@@ -1,0 +1,22 @@
+package selenium_revision;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class A3 {
+	public static void main(String[] args) {
+		try {
+			   System.setProperty("webdriver.chrome.driver", "D:\\selenium files//chromedriver.exe");
+			   ChromeDriver driver = new ChromeDriver();
+				driver.get("https://fluxgen.com/");	
+				Thread.sleep(2000);
+				driver.navigate().to("https://fluxgen.com/story/");
+				Thread.sleep(2000);
+				driver.navigate().to("https://api.whatsapp.com/send/?phone=%2B917356008082&text&type=phone_number&app_absent=0");
+				
+				
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}}
